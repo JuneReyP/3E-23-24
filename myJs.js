@@ -1,4 +1,4 @@
-document.getElementById("sample").innerHTML = "sample content";
+//document.getElementById("sample").innerHTML = "sample content";
 
 //single line comment
 /* 
@@ -59,5 +59,31 @@ There are different types of JavaScript operators:
         <= 	        less than or equal to
         ? 	        ternary operator
     Logical Operators
+        Operator 	Description
+        && 	        logical and   ( 1 == '1')T && (1 === '1')F == F
+        || 	        logical or
+        ! 	        logical not
     Ternary Operators
+        ?
+        (condition) ? ifTrue : ifFalse;
 */
+// function without parameter
+function myFunc(){
+    let getID = document.getElementById('sample');
+    getID.style.backgroundColor = 'red';
+    getID.style.border = "1px solid blue";
+    getID.style.color = "orange";
+}
+
+// myFunc();
+// with parameter
+function sumOf(num1, num2){
+    let ans = parseInt(num1) + parseInt(num2);
+    document.getElementById('answer').innerHTML = ans;
+}
+function simple(){
+    let num1 = document.getElementById('num1').value;
+    let num2 = document.getElementById('num2').value;
+
+    sumOf(parseInt(num1), parseInt(num2));
+}

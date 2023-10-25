@@ -9,11 +9,21 @@
     
     <p id="sample">lorem5</p>
     <button
-      onclick="document.getElementById('sample').style.backgroundColor = 'red'"
+      onclick="myFunc()"
     >
-      Check Date
+      Chaange Property
     </button>
-
+<hr>
+<fieldset>
+  <label for="num1">Enter first Number: </label>
+  <input type="number" id="num1">
+<br><br>
+<label for="num2">Enter second Number: </label>
+<input type="number" id="num2">
+<br><br>
+<button onclick="simple()">Add num1 and num2</button>
+<h1 id="answer">Answer here</h1>
+</fieldset>
     <!-- <script>
         /* 
         document.write('Sample JS output');
