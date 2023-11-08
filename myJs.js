@@ -197,9 +197,95 @@ for (initializer; condition; iterator) {
 }
  */
 
-let myArr = ["Apple", "orange", "banana", "grapes", "Guava"];
+let myArr = ["Apple", "orange", "banana", "grapes", "Guava","Apple", "orange", "banana", "grapes", "Guava"];
 // alert(myArr[3])
 
-for(let a = 0; a > 5; a++){
-    document.write(myArr[a] + "<br>");
+// for(let a = 0; a < myArr.length; a++){
+//     document.write(myArr[a] + "<br>")
+// }
+
+//myArr[0] = Apple
+//myArr[1] = orange
+//myArr[2] = banana
+let list = [
+  ["Ferrari", "Honda", "Hyundai"],//0
+  ["Apple", "orange", "banana"],//1
+  ["Juan","Juana", "Pedro", "Juan","Juana", "Pedro"],//2
+  ["Juan","Juana", "Pedro", "Juan","Juana", "Pedro"]//3
+]
+// alert(list[2][0])
+// alert(list[1][2])
+// for(let i = 0; i < list.length; i++){
+//     for(let j = 0; j < list[i].length; j++){
+//       document.write(list[i][j] + "<br>");
+//     }
+//     document.write("<br>")
+// }
+//list[0][0] = Ferrari
+//list[0][1] = Honda
+//list[0][2] = Hyundai
+//list[1][0] = Apple
+//list[1][1] = orange
+//list[1][2] = banana
+
+// let multi = [
+//   [
+//     [],
+//     [],
+//     []
+//   ],
+//   [
+//     [],
+//     [],
+//     []
+//   ],
+//   [
+//     [],
+//     [],
+//     []
+//   ]
+// ]
+// multi[][][]
+
+/**
+while (condition) {
+  // code block to be executed
+}
+ */
+
+// let arr = ["Banana", "Grapes", "Apple"]
+// let i = 0;
+// while(arr.length > i){
+//   document.write(arr[i] + "<br>")
+//   i++
+// }
+
+let express = true;
+let bankBal = 5000;
+while(express){
+  let input = prompt("Select: \n [1] Check Balance \n [2] Withdraw \n [3] Deposit \n [4] Exit");
+
+  switch(input){
+    case '1':
+      alert("Your current balance: " + bankBal);
+      break;
+    case '2':
+      let Withdraw = parseInt(prompt("Enter amount to withdraw:"))
+        if(Withdraw <= bankBal){
+          bankBal -= Withdraw;
+          alert(bankBal);
+        }else{
+          alert('Insufficient funds');
+        }
+      break;
+    case '3':
+      let deposit = parseInt(prompt("Enter amount to deposit:"));
+      bankBal += deposit;
+      break;
+    case '4':
+      express = false;
+      break;
+    default:
+      alert('Not in the list!');
+  }
 }
