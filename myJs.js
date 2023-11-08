@@ -260,32 +260,50 @@ while (condition) {
 //   i++
 // }
 
-let express = true;
-let bankBal = 5000;
-while(express){
-  let input = prompt("Select: \n [1] Check Balance \n [2] Withdraw \n [3] Deposit \n [4] Exit");
+// let express = true;
+// let bankBal = 5000;
+// while(express){
+//   let input = prompt("Select: \n [1] Check Balance \n [2] Withdraw \n [3] Deposit \n [4] Exit");
 
-  switch(input){
-    case '1':
-      alert("Your current balance: " + bankBal);
-      break;
-    case '2':
-      let Withdraw = parseInt(prompt("Enter amount to withdraw:"))
-        if(Withdraw <= bankBal){
-          bankBal -= Withdraw;
-          alert(bankBal);
-        }else{
-          alert('Insufficient funds');
-        }
-      break;
-    case '3':
-      let deposit = parseInt(prompt("Enter amount to deposit:"));
-      bankBal += deposit;
-      break;
-    case '4':
-      express = false;
-      break;
-    default:
-      alert('Not in the list!');
-  }
-}
+//   switch(input){
+//     case '1':
+//       alert("Your current balance: " + bankBal);
+//       break;
+//     case '2':
+//       let Withdraw = parseInt(prompt("Enter amount to withdraw:"))
+//         if(Withdraw <= bankBal){
+//           bankBal -= Withdraw;
+//           alert(bankBal);
+//         }else{
+//           alert('Insufficient funds');
+//         }
+//       break;
+//     case '3':
+//       let deposit = parseInt(prompt("Enter amount to deposit:"));
+//       bankBal += deposit;
+//       break;
+//     case '4':
+//       express = false;
+//       break;
+//     default:
+//       alert('Not in the list!');
+//   }
+// }
+
+/**
+1. Create a simple calculator using switch-case with html and JS
+*inputs:
+1st number and 2nd number and display the total
+*buttons
++ - / *
+
+2. Create a simple program that accepts user input and display a left-triangle asterisk(*) using nested for-loop
+*output:
+Sample input: 4
+*
+* *
+* * *
+* * * *
+
+3. Create a program that checks a letter if a vowel or a consonant using switch-case
+ */
